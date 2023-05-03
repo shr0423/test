@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>회원가입폼</title>
+</head>
+<body>
+	<form action="index.html" method="post">
+		<table border="1px" width="500px" align="center">
+			<tr>
+				<td colspan="2" align="center">회원가입</td>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td>
+					<input type="text" placeholder="your id" required>
+				</td>
+			</tr>
+			<tr>
+				<td>password</td>
+				<td><input type="password" placeholder="비번입력" maxlength="12" required>*12이하로 입력</td>
+			</tr>
+	
+			<tr>
+				<td>이름</td>
+				<td><input type="text" placeholder="your name" required></td>
+			</tr>
+	
+			<tr>
+				<td>우편번호</td>
+				<td><input type="text" readonly required>
+				<button>우편번호 검색</button>
+				</td>
+			</tr>
+	
+			<tr>
+				<td>주소</td>
+				<td><input type="text" placeholder="주소입력" required><br>
+				<input type="text" placeholder="나머지 주소"></td>
+			</tr>
+	
+			<tr>
+				<td>이메일 수신</td>
+				<td>yes<input type="radio" name="receive">
+				no<input type="radio" name="receive"></td>
+			</tr>
+	
+			<tr>
+				<td>이메일</td>
+				<td><input type="text" placeholder="메일아이디">@
+				<select>
+					<option>naver.com</option>
+					<option>daum.net</option>
+					<option>gmail.com</option>
+					<option>직접입력</option>
+				</select>
+				</td>
+			</tr>
+	
+			<tr>
+				<td>취미</td>
+				<td><input type="checkbox">피아노
+				<input type="checkbox">야구
+				<input type="checkbox">볼링
+				<input type="checkbox">축구</td>
+			</tr>
+	
+			<tr>
+				<td>가입메세지</td>
+				<td><textarea cols="45" rows="7" placeholder="가입시 하고픈 말"></textarea><td>
+			</tr>
+	
+			<tr>
+				<td colspan="2" align="center">
+				<button type="submit">가입</button>
+				<button type="reset">초기화</button></td>
+			</tr>
+	
+		</table>
+	</form>
+	
+</body>
+</html>
